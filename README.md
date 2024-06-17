@@ -6,9 +6,22 @@ A REST API for providing movie trailer URLs.
 
 This API fetches movie trailer URLs using the Viaplay and TMDB APIs. It takes a movie resource link as input and returns the URL to the trailer for that movie.
 
+## Features
+
+- **Caching**: Uses Redis for caching trailer URLs to improve performance and handle heavy loads.
+- **Environment Configuration**: Uses dotenv for managing environment variables.
+- **Testing**: Jest and Supertest for writing and running tests.
+- **TypeScript**: Written in TypeScript for type safety and better development experience.
+- **Express**: Lightweight and fast server-side framework.
+
 ## Prerequisites
 
-Before running this project locally, ensure you have Node.js and npm installed.
+
+Before running this project locally, ensure you have the following installed:
+
+- Node.js (version 14.x or later)
+- npm (version 6.x or later)
+- Redis (for caching)
 
 
 ## Installation
