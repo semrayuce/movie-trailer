@@ -3,8 +3,8 @@ import { TmdbMovieResponse, TmdbVideoResponse } from '../types/tmdbTypes';
 import { fetchImdbId } from './viaplayService';
 import redisClient from '../utils/redisClient';
 
-const TMDB_API_KEY = "fd9b0b68f574fa836b7b9b5c0e806a28";//process.env.TMDB_API_KEY;
-const TMDB_API_URL = 'https://api.themoviedb.org/3';//process.env.TMDB_API_URL;
+const TMDB_API_KEY = process.env.TMDB_API_KEY;
+const TMDB_API_URL = process.env.TMDB_API_URL;
 const CACHE_EXPIRATION_TIME = 604800; // 1 week in seconds
 
 
